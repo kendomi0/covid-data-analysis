@@ -1,0 +1,1220 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0912.2314                               -->
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='country_wise_latest' inline='true' name='federated.1eqax8l07aizf0130olr41jhmwzl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_wise_latest' name='textscan.1dsov3b1i2g1sf15ec6zp0le9mzf'>
+            <connection class='textscan' directory='C:/Users/kendr/Downloads/archive (6)' filename='country_wise_latest.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1dsov3b1i2g1sf15ec6zp0le9mzf' name='country_wise_latest.csv' table='[country_wise_latest#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country/Region' ordinal='0' />
+            <column datatype='integer' name='Confirmed' ordinal='1' />
+            <column datatype='integer' name='Deaths' ordinal='2' />
+            <column datatype='integer' name='Recovered' ordinal='3' />
+            <column datatype='integer' name='Active' ordinal='4' />
+            <column datatype='integer' name='New cases' ordinal='5' />
+            <column datatype='integer' name='New deaths' ordinal='6' />
+            <column datatype='integer' name='New recovered' ordinal='7' />
+            <column datatype='real' name='Deaths / 100 Cases' ordinal='8' />
+            <column datatype='real' name='Recovered / 100 Cases' ordinal='9' />
+            <column datatype='real' name='Deaths / 100 Recovered' ordinal='10' />
+            <column datatype='integer' name='Confirmed last week' ordinal='11' />
+            <column datatype='integer' name='1 week change' ordinal='12' />
+            <column datatype='real' name='1 week % increase' ordinal='13' />
+            <column datatype='string' name='WHO Region' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country/Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country/Region]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Country/Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovered]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Recovered</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Active]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Active</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New cases]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>New cases</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New deaths]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>New deaths</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New recovered]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>New recovered</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths / 100 Cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Deaths / 100 Cases]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Deaths / 100 Cases</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered / 100 Cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Recovered / 100 Cases]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Recovered / 100 Cases</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths / 100 Recovered</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Deaths / 100 Recovered]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Deaths / 100 Recovered</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed last week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed last week]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>Confirmed last week</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1 week change</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1 week change]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>1 week change</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1 week % increase</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[1 week % increase]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>1 week % increase</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WHO Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WHO Region]</local-name>
+            <parent-name>[country_wise_latest.csv]</parent-name>
+            <remote-alias>WHO Region</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1 Week % Increase' datatype='real' name='[1 week % increase]' role='measure' type='quantitative' />
+      <column caption='1 Week Change' datatype='integer' name='[1 week change]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='country_wise_latest.csv' datatype='table' name='[__tableau_internal_object_id__].[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kendr/AppData/Local/Temp/TableauTemp/#TableauTemp_0qxkehg0hsysjw10o4kxg1e83ogp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/07/2025 11:37:40 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country/Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country/Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country/Region</remote-alias>
+              <ordinal>0</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>187</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Confirmed</remote-alias>
+              <ordinal>1</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>184</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>2</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>150</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recovered</remote-alias>
+              <ordinal>3</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>178</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Active</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Active]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Active</remote-alias>
+              <ordinal>4</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New cases</remote-alias>
+              <ordinal>5</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New deaths</remote-alias>
+              <ordinal>6</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New recovered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New recovered</remote-alias>
+              <ordinal>7</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths / 100 Cases</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Deaths / 100 Cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths / 100 Cases</remote-alias>
+              <ordinal>8</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>145</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered / 100 Cases</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Recovered / 100 Cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recovered / 100 Cases</remote-alias>
+              <ordinal>9</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>177</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths / 100 Recovered</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Deaths / 100 Recovered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths / 100 Recovered</remote-alias>
+              <ordinal>10</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>155</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed last week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed last week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Confirmed last week</remote-alias>
+              <ordinal>11</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>183</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>1 week change</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[1 week change]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>1 week change</remote-alias>
+              <ordinal>12</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>1 week % increase</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[1 week % increase]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>1 week % increase</remote-alias>
+              <ordinal>13</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>169</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WHO Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WHO Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WHO Region</remote-alias>
+              <ordinal>14</ordinal>
+              <family>country_wise_latest.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='country_wise_latest.csv' id='country_wise_latest.csv_B095E5F4065A468792E72CEB94815F38'>
+            <properties context=''>
+              <relation connection='textscan.1dsov3b1i2g1sf15ec6zp0le9mzf' name='country_wise_latest.csv' table='[country_wise_latest#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Country/Region' ordinal='0' />
+                  <column datatype='integer' name='Confirmed' ordinal='1' />
+                  <column datatype='integer' name='Deaths' ordinal='2' />
+                  <column datatype='integer' name='Recovered' ordinal='3' />
+                  <column datatype='integer' name='Active' ordinal='4' />
+                  <column datatype='integer' name='New cases' ordinal='5' />
+                  <column datatype='integer' name='New deaths' ordinal='6' />
+                  <column datatype='integer' name='New recovered' ordinal='7' />
+                  <column datatype='real' name='Deaths / 100 Cases' ordinal='8' />
+                  <column datatype='real' name='Recovered / 100 Cases' ordinal='9' />
+                  <column datatype='real' name='Deaths / 100 Recovered' ordinal='10' />
+                  <column datatype='integer' name='Confirmed last week' ordinal='11' />
+                  <column datatype='integer' name='1 week change' ordinal='12' />
+                  <column datatype='real' name='1 week % increase' ordinal='13' />
+                  <column datatype='string' name='WHO Region' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='1 Week % Increase by Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_wise_latest' name='federated.1eqax8l07aizf0130olr41jhmwzl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eqax8l07aizf0130olr41jhmwzl'>
+            <column caption='1 Week % Increase' datatype='real' name='[1 week % increase]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Country/Region]' derivation='None' name='[none:Country/Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[1 week % increase]' derivation='Sum' name='[sum:1 week % increase:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Spain&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Sweden&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;US&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1eqax8l07aizf0130olr41jhmwzl].[sum:1 week % increase:qk]</rows>
+        <cols>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</cols>
+      </table>
+      <simple-id uuid='{F9D243D1-DBE3-4BDA-B052-3860ACF34F88}' />
+    </worksheet>
+    <worksheet name='1 Week Change in Cases by Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_wise_latest' name='federated.1eqax8l07aizf0130olr41jhmwzl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eqax8l07aizf0130olr41jhmwzl'>
+            <column caption='1 Week Change' datatype='integer' name='[1 week change]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Country/Region]' derivation='None' name='[none:Country/Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[1 week change]' derivation='Sum' name='[sum:1 week change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Spain&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Sweden&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;US&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1eqax8l07aizf0130olr41jhmwzl].[sum:1 week change:qk]</rows>
+        <cols>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</cols>
+      </table>
+      <simple-id uuid='{FD2EAF76-AF62-4087-BDF2-0A36775724F0}' />
+    </worksheet>
+    <worksheet name='Deaths/100 Cases by Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_wise_latest' name='federated.1eqax8l07aizf0130olr41jhmwzl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eqax8l07aizf0130olr41jhmwzl'>
+            <column datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Deaths / 100 Cases]' role='measure' type='quantitative' />
+            <column-instance column='[Country/Region]' derivation='None' name='[none:Country/Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Deaths / 100 Cases]' derivation='Sum' name='[sum:Deaths / 100 Cases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Spain&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;Sweden&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country/Region:nk]' member='&quot;US&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1eqax8l07aizf0130olr41jhmwzl].[sum:Deaths / 100 Cases:qk]</rows>
+        <cols>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</cols>
+      </table>
+      <simple-id uuid='{776C6016-8B7E-46F4-A52F-FF0AC6D19CDC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98130' id='15' param='horz' type-v2='layout-flow' w='99064' x='468' y='935'>
+            <zone h='98130' id='13' type-v2='layout-basic' w='99064' x='468' y='935'>
+              <zone h='98130' id='7' param='horz' type-v2='layout-flow' w='49532' x='468' y='935'>
+                <zone h='98130' id='5' type-v2='layout-basic' w='49532' x='468' y='935'>
+                  <zone h='98130' id='3' name='Deaths/100 Cases by Country' w='49532' x='468' y='935'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='98130' id='11' name='1 Week Change in Cases by Country' w='24767' x='74765' y='935'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98130' id='12' name='1 Week % Increase by Country' w='24765' x='50000' y='935'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='16' param='vert' type-v2='layout-flow' w='99064' x='468' y='935'>
+                <zone fixed-size='280' h='98130' id='3' is-fixed='true' name='Deaths/100 Cases by Country' w='49532' x='468' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98130' id='12' is-fixed='true' name='1 Week % Increase by Country' w='24765' x='50000' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98130' id='11' is-fixed='true' name='1 Week Change in Cases by Country' w='24767' x='74765' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C964F935-0BB5-4203-951D-68BFD360A7B5}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Deaths/100 Cases by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E67E9D11-C169-41EA-AE89-D5B8D402736D}' />
+    </window>
+    <window class='worksheet' name='1 Week % Increase by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4DACBEF8-B5DA-47B8-A32A-7A2BD7EC3F3B}' />
+    </window>
+    <window class='worksheet' name='1 Week Change in Cases by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1eqax8l07aizf0130olr41jhmwzl].[none:Country/Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3E3C809A-F285-4C05-BBDC-DF50ADF01E67}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='1 Week % Increase by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='1 Week Change in Cases by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Deaths/100 Cases by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0E1EEF79-68DF-4521-857E-CE6BDBEA2C4C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='1 Week % Increase by Country' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='1 Week Change in Cases by Country' width='192'>
+      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
+      A+U4oOu/HAM4LX789nvE06PM58fY2KkQiScJOg2a3T5Tl2dpVzXcfolM/rJcIkkMrTO4QoxC
+      uYpPq+YVPHKwLAEQw2jAq0Q+SEN7YJ6QfL3F00R+r0R4mgRAeJoEQHiaBEB4mgRAeJoEQHia
+      BEB4mgRAeJoEQHiaBEB4mgRAeJoEQHjagJPhFHtrt7DjeaYSDjc+2iYzmSXktihW2sxfnaNd
+      U2j2IfHxSblEkhhaAwcglUpS6Nj0q0Xqro+5WIzyboWlhRwbhW0OCg3Ss3kyPu1+QYzrujId
+      WgyVAQOgEwwEoAP+9CW+NGKzeneVgN9AuTYKjVAohOM4956t6yilpB5ADJ0BA+CwvVeh29do
+      hmx29kqMpCaI6V1WN2vML0zTSYDmHNK1FJHAvS/+pzchhsUZVIQ9HqkIE8NIRqfC0yQAwtMk
+      AMLTJADC0yQAwtMkAMLTJADC0yQAwtMkAMLTJADC0yQAwtMkAMLTJADC0wacDu2ytfw+vZF5
+      5uIWH60ViY4kCbtNDtsmk5dnaVfuXSAjN78gFWFiaA04HVrhtg5YaxiEWwckFxYoLC+jGT4u
+      z06wXtihcHufuVdeZj6bvF8RBsh0aDFUBr5ARt/qY5o2Sb9L9bCFrUC3+rQaNXyhKLnZS3Rr
+      BzgTSQzDkHoAMZQG3gVq9jTifkV8fB5zf5f87CUCbpty3WQ2n8FMKXRl4rgKQ5cvvRhOUhEm
+      PE1Gp8LTJADC0yQAwtMkAMLTJADC0yQAwtMkAMLTJADC0yQAwtMkAMLTJADC0yQAwtMGng79
+      KdducWu5wMj4OHFfn71Km/kreToNhea2CCXSUhAjhtapA2BVd+kEEswm4mxvrDE3Ncr29g7N
+      Uo/gaIyrqQyu66KUul8UI8SwOPWq2UjkyUZdVlfvgqbh8/txrD6dVhN/IAyAUur+TYhhcuot
+      QN/sUK83CEUTxLUOt1d3mV2YZSSWR1kHdK0MkYAPQOoBnlLvr+zzvZ/eHvj1yViYv/n2l86w
+      R2fn1AEIj6R59tn0/f/nuFf3G88CxE/bvBgC5XqHa7f3Bn79xGj0DHtztk4dANCQlbp4Wsnh
+      GeFpEgDhaRIA4WkSAOFpEgDhaRIA4WkSAOFpEgDhaWcaANex6XR7KFwcx8V1bFxX5v+I4XUG
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Deaths/100 Cases by Country' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
