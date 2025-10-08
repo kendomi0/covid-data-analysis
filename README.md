@@ -3,7 +3,7 @@ An interactive data visualization using a snapshot of Covid data by country from
 
 ![Dashboard](imgs/covid_by_country.png)
 
-**[View Tableau dashboard](https://public.tableau.com/app/profile/kendra.dominique/viz/covid_by_country/Dashboard1)**
+**[View Tableau dashboard](https://public.tableau.com/app/profile/kendomi0/viz/covid_db/Dashboard1)**
 
 ## Technologies Used
 - Tableau
