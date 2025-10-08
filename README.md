@@ -1,6 +1,8 @@
 # Covid Data Visualization
 An interactive data visualization using a snapshot of Covid data by country from July 2020.
 
+![Dashboard](imgs/covid_by_country.png)
+
 **[View Tableau dashboard](https://public.tableau.com/app/profile/kendra.dominique/viz/covid_by_country/Dashboard1)**
 
 ## Technologies Used
